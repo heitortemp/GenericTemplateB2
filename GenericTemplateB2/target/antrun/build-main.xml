@@ -2,6 +2,6 @@
 <project name="maven-antrun-" default="main"  >
 <target name="main">
   <taskdef classname="org.oscelot.ant.B2DeployTask" name="b2deploy" classpathref="maven.plugin.classpath"/>
-  <b2deploy host="127.0.0.1:9876" clean="true" courseorgavailable="true" localfilepath="C:\Users\htemp\workspace\GenericTemplateB2/target/generic-template-2.0.0.war"/>
+  <b2deploy host="127.0.0.1:9876" clean="true" courseorgavailable="true" localfilepath="C:\Users\htemp\git\GenericTemplateB2\GenericTemplateB2/target/generic-template-2.0.0.war"/>
 </target>
 </project>
