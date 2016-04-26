@@ -1,0 +1,1 @@
+# GenericTemplateB2
