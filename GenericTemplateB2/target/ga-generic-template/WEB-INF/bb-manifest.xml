@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<plugin>
+		<name value="Generic Template" />
+		<handle value="generic-template" />
+		<description value="Building block de teste" />
+		<version value="1.0" />
+
+		<requires>
+			<bbversion value="9.1.201404.160205" />
+		</requires>
+
+		<vendor>
+			<id value="ga" />
+			<name value="Grupo A" />
+			<url value="http://www.grupoa.com.br/" />
+			<description value="Building block de teste" />
+		</vendor>
+
+		<http-actions>
+			<config value="config"></config>
+		</http-actions>
+		
+		<application-defs>
+			<application handle="generic-template" type="system"
+				use-ssl="false" name="" can-allow-guest="true" is-sys-tool="false" is-course-tool="false">
+				<description lang="en_US"></description>
+				<links>
+
+					<link>
+						<type value="system_tool"></type>
+						<name value="Generic Template"></name>
+						<url value="home"></url>
+					</link>
+					
+				</links>
+			</application>
+		</application-defs>
+
+		<!-- Portal Module Definitions -->
+		<module-defs>
+		</module-defs>
+		<!-- Custom Content Types -->
+		<content-handlers>
+		</content-handlers>
+
+		<!-- code permissions required for proper operation -->		
+		<permissions>
+            <permission type="attribute" name="user.authinfo" actions="get,set" />
+            <permission type="attribute" name="user.personalinfo"
+                       actions="get,set" />
+            <permission type="java.io.FilePermission" name="&amp;lt;&amp;lt;ALL FILES&amp;gt;&amp;gt;" actions="read,write" />
+            <permission type="java.util.PropertyPermission" name="*"
+                       actions="read,write" />
+            <permission type="runtime" name="accessClassInPackage.*" />
+            <permission type="runtime" name="accessDeclaredMembers" />
+            <permission type="runtime" name="db.connection.*" />
+            <permission type="runtime" name="getClassLoader" />
+            <permission type="runtime" name="createClassLoader" />
+            <permission type="runtime" name="getProtectionDomain" />
+            <permission type="java.lang.reflect.ReflectPermission"
+                       name="suppressAccessChecks" />
+            <permission type="java.net.SocketPermission" name="*"
+                       actions="connect,resolve,listen" />
+            <permission type="java.lang.RuntimePermission" name="accessDeclaredMembers" />
+   			<permission type="java.lang.RuntimePermission" name="createClassLoader" />
+   			<permission type="java.lang.RuntimePermission" name="setContextClassLoader" />
+                       
+        </permissions>
+
+		
+	</plugin>
+</manifest>

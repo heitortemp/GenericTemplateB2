@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<manifest>
+	<plugin>
+		<name value="Generic Template" />
+		<handle value="generic-template" />
+		<description value="A simple and generic template to be used as base for new building blocks" />
+		<webapp-type value="javaext" />
+		<version value="2.0.0" />
+
+		<requires>
+			<bbversion value="9.1" />
+		</requires>
+
+		<vendor>
+			<id value="ga" />
+			<name value="Grupo A" />
+			<url value="http://www.grupoa.com.br/" />
+			<description
+				value="O Grupo A existe para ajudar pessoas e instituições a encontrar 
+				respostas para os novos desafios da Educação." />
+		</vendor>
+
+		<http-actions>
+			<config value="config"></config>
+		</http-actions>
+
+		<application-defs>
+			<application handle="generic-template" type="system"
+				use-ssl="false" name="" can-allow-guest="false" is-sys-tool="true"
+				is-course-tool="false">
+				<description lang="en_US"></description>
+				<links>
+					<link>
+						<type value="system_tool"></type>
+						<name value="Generic Template"></name>
+						<url value="home"></url>
+					</link>
+				</links>
+			</application>
+		</application-defs>
+
+		<!-- Portal Module Definitions -->
+		<module-defs>
+		</module-defs>
+
+		<extension-defs><!-- Cx extension for import export support. -->
+			<definition namespace="blackboard.platform">
+				<extension id="test" point="blackboard.platform.cxComponent"
+					class="br.com.grupoa.generictemplate.bo.Teste"
+					singleton="true" />
+			</definition>
+		</extension-defs>
+
+		<!-- Custom Content Types -->
+		<content-handlers>
+		</content-handlers>
+
+		<!-- PRIVILÉGIO -->
+		<entitlements>
+			<entitlement uid="br.com.grupoa.generictemplate.VIEW"
+				label="Generic Template" type="System" template="system.administration.VIEW" />
+		</entitlements>
+
+		<!-- code permissions required for proper operation -->
+		<permissions>
+			<permission type="attribute" name="user.authinfo" actions="get,set" />
+			<permission type="attribute" name="user.personalinfo"
+				actions="get,set" />
+			<permission type="java.io.FilePermission"
+				name="&amp;lt;&amp;lt;ALL FILES&amp;gt;&amp;gt;" actions="read,write" />
+			<permission type="java.util.PropertyPermission" name="*"
+				actions="read,write" />
+			<permission type="runtime" name="accessClassInPackage.*" />
+			<permission type="runtime" name="accessDeclaredMembers" />
+			<permission type="runtime" name="getClassLoader" />
+			<permission type="runtime" name="createClassLoader" />
+			<permission type="runtime" name="getProtectionDomain" />
+			<permission type="java.lang.reflect.ReflectPermission"
+				name="suppressAccessChecks" />
+			<permission type="java.lang.RuntimePermission" name="accessDeclaredMembers" />
+			<permission type="java.lang.RuntimePermission" name="createClassLoader" />
+			<permission type="java.lang.RuntimePermission" name="setContextClassLoader" />
+			<permission type="java.lang.RuntimePermission" name="injectRenderingHook" />
+		</permissions>
+	</plugin>
+</manifest>
