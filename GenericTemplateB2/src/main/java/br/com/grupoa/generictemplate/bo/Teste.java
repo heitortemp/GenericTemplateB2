@@ -30,7 +30,7 @@ public class Teste implements CxComponent {
 	public void doCopy(CopyControl arg0) {
 		// TODO Auto-generated method stub
 		//logger.debug("Course copied " + arg0.getDestinationCourseId());
-          System.out.println("afterImportContent");
+          System.out.println("doCopy");
 		
 	}
 
