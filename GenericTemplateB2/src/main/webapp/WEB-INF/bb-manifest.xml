@@ -6,7 +6,7 @@
 		<handle value="generic-template" />
 		<description value="A simple and generic template to be used as base for new building blocks" />
 		<webapp-type value="javaext" />
-		<version value="2.0.0" />
+		<version value="2.3.0" />
 
 		<requires>
 			<bbversion value="9.1" />

@@ -1,7 +1,5 @@
 package br.com.grupoa.generictemplate.bo;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import blackboard.data.content.Content;
 import blackboard.platform.cx.component.CopyControl;
@@ -12,58 +10,62 @@ import blackboard.platform.cx.component.ImportControl;
 
 public class Teste implements CxComponent {
 	
-	private static final Logger logger = LoggerFactory.getLogger(Teste.class);
+    private static final String APP_HANDLE = "generic-template";
+    private static final String HOOK_NAME = "Teste";
+    private static final String COMPONENT_HANDLE = "generic-template-cx-hook";
+    private static final Usage USAGE_SETTING = Usage.ALWAYS;
+
+    public Teste() {
+          System.out.println("Teste is standing up....");
+    }
 
 	@Override
 	public void afterImportContent(Content arg0, ImportControl arg1) {
 		// TODO Auto-generated method stub
-		logger.debug("afterImportContent");
-		
+		//logger.debug("afterImportContent");
+          System.out.println("afterImportContent");
 	}
 
 	@Override
 	public void doCopy(CopyControl arg0) {
 		// TODO Auto-generated method stub
-		logger.debug("Course copied " + arg0.getDestinationCourseId());
+		//logger.debug("Course copied " + arg0.getDestinationCourseId());
+          System.out.println("doCopy");
 		
 	}
 
 	@Override
 	public void doExport(ExportControl arg0) {
 		// TODO Auto-generated method stub
-		logger.debug("doExport");
+		//logger.debug("doExport");
+          System.out.println("doExport");
 		
 	}
 
 	@Override
 	public void doImport(GenericPackageEntry arg0, ImportControl arg1) {
 		// TODO Auto-generated method stub
-		logger.debug("doImport");
-		
+		//logger.debug("doImport");
+          System.out.println("doImport");
 	}
 
-	@Override
-	public String getApplicationHandle() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Override
+    public String getName() {
+        return HOOK_NAME;
+    }
 
-	@Override
-	public String getComponentHandle() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Override
+    public String getComponentHandle() {
+        return COMPONENT_HANDLE;
+    }
 
-	@Override
-	public String getName() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Override
+    public Usage getUsage() {
+        return USAGE_SETTING;
+    }
 
-	@Override
-	public Usage getUsage() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
+    @Override
+    public String getApplicationHandle() {
+        return APP_HANDLE;
+    }
 }
