@@ -14,7 +14,7 @@
 	<properties>
     	<!-- Host para deploy do B2 -->
     	<bb-host>127.0.0.1:9876</bb-host>
-		<blackboard.platform-version>9.1.201510.1171621</blackboard.platform-version>
+		<blackboard.platform-version>9.1.201410.160373</blackboard.platform-version>
 			
 		<java-version>1.7</java-version>
 		<org.springframework-version>4.1.6.RELEASE</org.springframework-version>

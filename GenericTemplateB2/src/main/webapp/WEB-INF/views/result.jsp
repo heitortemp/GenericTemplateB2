@@ -5,16 +5,16 @@
 <%@taglib uri="/bbUI" prefix="bbUI"%>
 
 <bbNG:learningSystemPage ctxId="ctx">
-	<bbNG:pageHeader instructions="Página de testes...">
+	<bbNG:pageHeader instructions="Test Page">
 		<bbNG:breadcrumbBar>
 			<bbNG:breadcrumb>Generic Template</bbNG:breadcrumb>
 		</bbNG:breadcrumbBar>
 		<bbNG:pageTitleBar>Generic Template</bbNG:pageTitleBar>
 	</bbNG:pageHeader>
 <h1>
-	Página de teste!  
+	Hello World!
 </h1>
 
-O nome digitado foi: <h3>${showName}</h3>
+The received value was: <h3>${showName}</h3>
 
 </bbNG:learningSystemPage>

@@ -5,14 +5,14 @@
 <%@taglib uri="/bbUI" prefix="bbUI"%>
 
 <bbNG:learningSystemPage ctxId="ctx">
-	<bbNG:pageHeader instructions="Página de testes...">
+	<bbNG:pageHeader instructions="Test Page">
 		<bbNG:breadcrumbBar>
-			<bbNG:breadcrumb>Context Flow Manager Saraiva...</bbNG:breadcrumb>
+			<bbNG:breadcrumb>Generic Template</bbNG:breadcrumb>
 		</bbNG:breadcrumbBar>
-		<bbNG:pageTitleBar>Context Flow Manager</bbNG:pageTitleBar>
+		<bbNG:pageTitleBar>Generic Template</bbNG:pageTitleBar>
 	</bbNG:pageHeader>
 <h1>
-	Página principal!  
+	Hello World!
 </h1>
 
 </bbNG:learningSystemPage>

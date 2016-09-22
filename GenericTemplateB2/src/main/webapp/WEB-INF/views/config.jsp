@@ -5,7 +5,7 @@
 <%@taglib uri="/bbUI" prefix="bbUI"%>
 
 <bbNG:learningSystemPage ctxId="ctx">
-	<bbNG:pageHeader instructions="Página de testes...">
+	<bbNG:pageHeader instructions="Test Page">
 		<bbNG:breadcrumbBar>
 			<bbNG:breadcrumb>Generic Template</bbNG:breadcrumb>
 		</bbNG:breadcrumbBar>
@@ -14,9 +14,9 @@
 
 	<form action="result" method="post">
 
-		<bbUI:step title="Página de configuração" number="1">
-			<bbUI:instructions>Teste de envio.</bbUI:instructions>
-			<bbUI:dataElement label="Campo teste">
+		<bbUI:step title="Settings Page" number="1">
+			<bbUI:instructions>Sending test</bbUI:instructions>
+			<bbUI:dataElement label="Test Field">
 				<input type="text" name="testeName" required="required"/>
 			</bbUI:dataElement>
 		</bbUI:step>

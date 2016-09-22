@@ -6,7 +6,7 @@
 		<handle value="generic-template" />
 		<description value="A simple and generic template to be used as base for new building blocks" />
 		<webapp-type value="javaext" />
-		<version value="2.0.0" />
+		<version value="1.0.0" />
 
 		<requires>
 			<bbversion value="9.1" />
@@ -26,13 +26,12 @@
 		</http-actions>
 
 		<application-defs>
-			<application handle="generic-template" type="system"
-				use-ssl="false" name="" can-allow-guest="false" is-sys-tool="true"
-				is-course-tool="false">
+			<application handle="generic-template" type="course"
+				use-ssl="false" name="" can-allow-guest="false">
 				<description lang="en_US"></description>
 				<links>
 					<link>
-						<type value="system_tool"></type>
+						<type value="tool"></type>
 						<name value="Generic Template"></name>
 						<url value="home"></url>
 					</link>
@@ -45,11 +44,13 @@
 		</module-defs>
 
 		<extension-defs><!-- Cx extension for import export support. -->
+			<!--
 			<definition namespace="blackboard.platform">
 				<extension id="test" point="blackboard.platform.cxComponent"
 					class="br.com.grupoa.generictemplate.bo.Teste"
 					singleton="true" />
 			</definition>
+			-->
 		</extension-defs>
 
 		<!-- Custom Content Types -->
