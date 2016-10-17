@@ -27,7 +27,7 @@
 
 		<application-defs>
 			<application handle="generic-template" type="course"
-				use-ssl="false" name="" can-allow-guest="false">
+				use-ssl="false" name="GenericTemplate" can-allow-guest="false">
 				<description lang="en_US"></description>
 				<links>
 					<link>
